@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Still Point — Pilates & Yoga Studio, Jayanagar</title>
+  <meta name="description" content="Still Point is a Pilates and yoga studio in Jayanagar, Bengaluru, with reformer classes, slow vinyasa and yin, capped at 12 people per class." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loader: one slow breath -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__orb"></div>
+    <p class="loader__word" id="loaderWord">breathe in</p>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="Still Point home">
+      <svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="4" fill="currentColor"/></svg>
+      Still Point
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#practices">Practices</a>
+      <a href="#timetable">Timetable</a>
+      <a href="#teachers">Teachers</a>
+      <a href="#offers">Offers</a>
+    </nav>
+    <a href="#book" class="btn btn--forest nav__cta">Book a class</a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- HERO: breathing ring -->
+    <section class="hero">
+      <h1 class="hero__title">
+        <span class="hero__l1">Move slowly,</span>
+        <span class="hero__l2">stand a little taller.</span>
+      </h1>
+      <div class="hero__stage">
+        <div class="hero__ring" id="ring">
+          <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=80">
+            <source src="assets/video/hero-yoga.mp4" type="video/mp4" />
+            <source src="https://www.pexels.com/download/video/6111096/" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero__halo" aria-hidden="true"></div>
+        <p class="hero__breath" id="breath" aria-hidden="true">Inhale</p>
+      </div>
+      <div class="hero__foot">
+        <p>Reformer Pilates and yoga in a twelve-person studio in Jayanagar. Unhurried classes, hands-on teachers, and a room that smells of sandalwood.</p>
+        <a href="#book" class="btn btn--forest">Try three classes for ₹1,499</a>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="intro__arch intro__arch--a"><img src="assets/img/intro-studio.jpg" data-remote="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80" alt="Woman meditating in soft morning light" loading="eager" decoding="async" /></div>
+      <div class="intro__text">
+        <h2 class="h2">A small room where people notice you.</h2>
+        <p>We cap every class at twelve so the teacher can adjust your alignment, learn your name, and remember the shoulder you hurt last month.</p>
+        <p>Beginners start with a one-to-one session on the reformer before joining a group.</p>
+      </div>
+      <div class="intro__arch intro__arch--b"><img src="assets/img/intro-mat.jpg" data-remote="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&fit=crop&w=700&q=80" alt="Yoga mat and blocks laid out in the studio" loading="eager" decoding="async" /></div>
+    </section>
+
+    <!-- PRACTICES: expanding panels -->
+    <section class="practices" id="practices">
+      <div class="practices__head">
+        <h2 class="h2">Five practices, one pace</h2>
+        <p>Hover or tap a practice to read more.</p>
+      </div>
+      <div class="panels" id="panels">
+        <article class="panel is-open" tabindex="0">
+          <img src="assets/img/practice-reformer.jpg" data-remote="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" alt="Group Pilates class" loading="lazy" />
+          <div class="panel__body">
+            <h3>Reformer Pilates</h3>
+            <p>Spring-loaded resistance for deep core and posture work. Our most booked class.</p>
+            <p class="panel__meta">50 min · 8 reformers</p>
+          </div>
+        </article>
+        <article class="panel" tabindex="0">
+          <img src="assets/img/practice-mat.jpg" data-remote="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=1200&q=80" alt="Woman holding a Pilates mat position" loading="lazy" />
+          <div class="panel__body">
+            <h3>Mat Pilates</h3>
+            <p>Classical sequences on the mat with rings and light weights. No equipment experience needed.</p>
+            <p class="panel__meta">45 min · All levels</p>
+          </div>
+        </article>
+        <article class="panel" tabindex="0">
+          <img src="assets/img/practice-vinyasa.jpg" data-remote="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=1200&q=80" alt="Yoga class flowing through a sequence" loading="lazy" />
+          <div class="panel__body">
+            <h3>Slow vinyasa</h3>
+            <p>Breath-led flow that holds each pose a few breaths longer than you're used to.</p>
+            <p class="panel__meta">60 min · All levels</p>
+          </div>
+        </article>
+        <article class="panel" tabindex="0">
+          <img src="assets/img/practice-yin.jpg" data-remote="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=80" alt="Woman in a restful seated yoga pose" loading="lazy" />
+          <div class="panel__body">
+            <h3>Yin & restore</h3>
+            <p>Long floor holds with bolsters and blankets. Evenings only, lights low.</p>
+            <p class="panel__meta">75 min · Gentle</p>
+          </div>
+        </article>
+        <article class="panel" tabindex="0">
+          <img src="assets/img/practice-prenatal.jpg" data-remote="https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?auto=format&fit=crop&w=1200&q=80" alt="Calm yoga practice on a mat" loading="lazy" />
+          <div class="panel__body">
+            <h3>Prenatal</h3>
+            <p>Taught by a certified prenatal instructor, safe from the second trimester onward.</p>
+            <p class="panel__meta">50 min · Doctor's clearance needed</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TIMETABLE -->
+    <section class="timetable" id="timetable">
+      <div class="timetable__head">
+        <h2 class="h2">This week</h2>
+        <div class="chips" role="group" aria-label="Filter classes">
+          <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">Everything</button>
+          <button type="button" class="chip" data-filter="pilates" aria-pressed="false">Pilates</button>
+          <button type="button" class="chip" data-filter="yoga" aria-pressed="false">Yoga</button>
+        </div>
+      </div>
+      <div class="days" id="days"></div>
+    </section>
+
+    <!-- FILM -->
+    <section class="film">
+      <div class="film__frame" id="filmFrame">
+        <video id="film" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1593810450967-f9c42742e326?auto=format&fit=crop&w=1920&q=80">
+          <source src="assets/video/studio-film.mp4" type="video/mp4" />
+          <source src="https://www.pexels.com/download/video/4057411/" type="video/mp4" />
+        </video>
+        <div class="film__caption">
+          <p>Saturday 7 AM, the light comes through the east windows.</p>
+          <button class="film__toggle" id="filmToggle" type="button" aria-label="Pause video">Pause</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEACHERS -->
+    <section class="teachers" id="teachers">
+      <h2 class="h2">The teachers</h2>
+      <div class="teachers__row">
+        <article class="teacher">
+          <div class="teacher__arch"><img src="assets/img/teacher-1.jpg" data-remote="https://images.unsplash.com/photo-1573384666979-2b1e160d2d08?auto=format&fit=crop&w=700&q=80" alt="Portrait of Lakshmi Iyer" loading="lazy" /></div>
+          <h3>Lakshmi Iyer</h3>
+          <p>Founder. Reformer Pilates, STOTT certified, teaching since 2012.</p>
+        </article>
+        <article class="teacher">
+          <div class="teacher__arch"><img src="assets/img/teacher-2.jpg" data-remote="https://images.unsplash.com/photo-1588286840104-8957b019727f?auto=format&fit=crop&w=700&q=80" alt="Portrait of Tara D'Souza" loading="lazy" /></div>
+          <h3>Tara D'Souza</h3>
+          <p>Slow vinyasa and yin. 500-hour RYT, trained in Mysuru.</p>
+        </article>
+        <article class="teacher">
+          <div class="teacher__arch"><img src="assets/img/teacher-3.jpg" data-remote="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=700&q=80" alt="Portrait of Siddharth Bhat" loading="lazy" /></div>
+          <h3>Siddharth Bhat</h3>
+          <p>Mat Pilates and mobility. Former physiotherapist.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section class="offers" id="offers">
+      <h2 class="h2">Ways to begin</h2>
+      <div class="offers__grid">
+        <article class="offer offer--intro">
+          <h3>New here</h3>
+          <p class="offer__price">₹1,499</p>
+          <p>Three classes in your first fortnight, including one private reformer session.</p>
+          <a href="#book" class="btn btn--ochre">Start the intro offer</a>
+        </article>
+        <article class="offer">
+          <h3>Monthly unlimited</h3>
+          <p class="offer__price">₹5,800</p>
+          <p>Every mat and yoga class, plus four reformer classes each month.</p>
+          <a href="#book" class="btn btn--line">Choose monthly</a>
+        </article>
+        <article class="offer">
+          <h3>Reformer 8-pack</h3>
+          <p class="offer__price">₹7,200</p>
+          <p>Eight reformer classes, valid for ten weeks. Share with one friend.</p>
+          <a href="#book" class="btn btn--line">Choose the 8-pack</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORDS -->
+    <section class="words" aria-label="What members say">
+      <div class="words__slides" id="words">
+        <blockquote class="word is-on">
+          <p>My lower back pain of six years is gone. I didn't expect a Pilates class to do what physiotherapy couldn't.</p>
+          <cite>Nandini, member for 2 years</cite>
+        </blockquote>
+        <blockquote class="word">
+          <p>It's the only hour in my week where nobody needs anything from me.</p>
+          <cite>Raghav, Thursday yin regular</cite>
+        </blockquote>
+        <blockquote class="word">
+          <p>Lakshmi corrected my posture in the first five minutes. I've been doing yoga wrong for years.</p>
+          <cite>Fatima, member since March</cite>
+        </blockquote>
+      </div>
+      <div class="words__dots" id="wordDots" role="tablist" aria-label="Choose testimonial"></div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="book" id="book">
+      <div class="book__text">
+        <h2 class="h2">Come for one class.</h2>
+        <p>Leave your details and we'll message you the week's open spots. Arrive ten minutes early; mats, towels and water are here for you.</p>
+        <p class="book__addr">22, 11th Main, 4th Block, Jayanagar, Bengaluru 560011</p>
+      </div>
+      <form class="book__form" id="bookForm" novalidate>
+        <label>Your name<input type="text" name="name" autocomplete="name" required /></label>
+        <label>WhatsApp number<input type="tel" name="phone" autocomplete="tel" required /></label>
+        <fieldset>
+          <legend>I'm interested in</legend>
+          <label class="pill"><input type="radio" name="kind" value="Pilates" checked /> Pilates</label>
+          <label class="pill"><input type="radio" name="kind" value="Yoga" /> Yoga</label>
+          <label class="pill"><input type="radio" name="kind" value="Both" /> Both</label>
+        </fieldset>
+        <button type="submit" class="btn btn--forest">Send me open spots</button>
+        <p class="book__msg" id="bookMsg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__big">Still Point</p>
+    <div class="footer__row">
+      <p>Mon–Sat 6:30 AM – 8:30 PM<br />Sun 8 AM – 11 AM</p>
+      <p><a href="tel:+919822222222">+91 98222 22222</a><br /><a href="mailto:hello@stillpoint.studio">hello@stillpoint.studio</a></p>
+      <p><a href="#">Instagram</a><br /><a href="#">WhatsApp</a></p>
+    </div>
+    <p class="footer__small">© 2026 Still Point Studio</p>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
